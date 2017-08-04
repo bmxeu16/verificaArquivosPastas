@@ -4,14 +4,19 @@ import java.io.File;
 
 public class VerificaPasta {
 
+	
+	
 	String nomeArquivo;
 	double tamanhoArquivos;
 	double tamanhoArquivos2;
 	
 	double converteTotal;
 	
+	GeraLog log = new GeraLog();
 	
 	public double buscaArquivos(){		
+		
+		
 		
 		double tamanhoTotal = 0;
 		int contador = 0;
@@ -38,19 +43,25 @@ public class VerificaPasta {
                     //System.out.println("Diretorio: " + f.getName()); 
                 } 
             }
-            System.out.println("Total de Arquivos encontrado: " + contador);
+            //System.out.println("Total de Arquivos encontrado: " + contador);
+            log.montaLog("Total de Arquivos encontrado: " + contador);
             converteTotal = tamanhoTotal / 1000;
-            System.out.println("Tamanho Total: " + converteTotal + " KB"); 
+            //System.out.println("Tamanho Total: " + converteTotal + " KB");
+            log.montaLog("Tamanho Total: " + converteTotal + " KB");
         }
         return tamanhoTotal;
 	}
 	
 	public void comparaTamanhos(){
 		
-		System.out.println("Verifica Tamanho!");
+		//System.out.println("Verifica Tamanho!");
+		log.montaLog("Verifica Tamanho!");
+		
 		tamanhoArquivos = buscaArquivos();
 		
-		System.out.println("Delay 10000.");
+		//System.out.println("Delay 10000.");
+		log.montaLog("Delay 10000.");
+		
 		try {
 			Thread.sleep(10000);
 		} catch (Exception e) {
