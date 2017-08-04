@@ -21,7 +21,7 @@ public class Aplicativo {
                     System.out.println(nomeArquivo + ", " + tamanhoArquivo); 
                 } 
                 else if(f.isDirectory()){ 
-                    //System.out.println("Diretorio: " + f.getName()); 
+                    System.out.println("Diretorio: " + f.getName()); 
                 } 
             }
         }
