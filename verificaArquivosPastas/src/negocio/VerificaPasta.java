@@ -1,6 +1,7 @@
 package negocio;
 
 import java.io.File;
+import java.io.IOException;
 
 public class VerificaPasta {
 
@@ -74,6 +75,12 @@ public class VerificaPasta {
 			System.out.println("Não faz nada");
 		}else if(tamanhoArquivos2 == tamanhoArquivos){
 			System.out.println("Executa tarefa!!!");
+			String comando = "C:\\Users\\wmeier\\Desktop\\executavel.bat";
+			try{
+				Runtime.getRuntime().exec("rundll32 SHELL32.DLL,ShellExec_RunDLL "+comando);
+			}catch (IOException e){
+				e.printStackTrace();
+			}
 			//colocar delay de 5min depois que executar a tarefa!
 		}
 	}
