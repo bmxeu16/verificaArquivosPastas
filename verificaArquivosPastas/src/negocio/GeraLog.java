@@ -8,13 +8,13 @@ import java.util.GregorianCalendar;
 
 public class GeraLog {
 	
-	public void montaLog(String conteudo){
+	public void gravaLog(String conteudo){
 		
 		String textoQueSeraEscrito = conteudo;  
 		
 	    try { 
-	    	PrintWriter out = new PrintWriter(new BufferedWriter(new FileWriter("C:\\Users\\wmeier\\Desktop\\log.txt", true)));
-	        //arquivo = new FileWriter(new File("C:\\Users\\wmeier\\Desktop\\log.txt"));  
+	    	PrintWriter out = new PrintWriter(new BufferedWriter(
+	    			new FileWriter("C:\\Users\\wmeier\\Desktop\\log.txt", true)));  
 	        out.println(dataHoraServidor()+" linha: "+textoQueSeraEscrito+ "\n");  
 	        out.close(); 
 	    } catch (IOException e) {  
