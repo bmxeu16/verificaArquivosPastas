@@ -5,6 +5,10 @@ package negocio;
  * Executar por linha de comando em Linux
  
    java -jar Aplicativo.jar "caminho"
+   
+   Ocultar terminal na execução!
+   start javaw -jar Aplicativo.jar "" "" ""
+   
  */
 
 public class Aplicativo {
@@ -31,6 +35,9 @@ public class Aplicativo {
 			System.exit(0);
 		}else if(caminhoLog == null || caminhoLog.trim().equals("")){
 			pan.showCustomAlert("Caminho Log não configurado!");
+			System.exit(0);
+		}else if(!comando.toLowerCase().contains("bat".toLowerCase())){
+			pan.showCustomAlert("Executavel precisa estar na extensão .bat!");
 			System.exit(0);
 		}else{
 			log.setCaminhoLog(caminhoLog);
