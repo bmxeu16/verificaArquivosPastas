@@ -8,15 +8,17 @@ import java.util.GregorianCalendar;
 
 public class GeraLog {
 	
+	String caminhoLog;
+
 	public void gravaLog(String conteudo){
 		
 		String textoQueSeraEscrito = conteudo;  
 		
 	    try { 
 	    	PrintWriter out = new PrintWriter(new BufferedWriter(
-	    			new FileWriter("C:\\Users\\wmeier\\Desktop\\log.txt", true)));  
+	    			new FileWriter(getCaminhoLog()+"\\log.log", true)));  
 	        out.println(dataHoraServidor()+" linha: "+textoQueSeraEscrito+ "\n");  
-	        out.close(); 
+	        out.close();
 	    } catch (IOException e) {  
 	        e.printStackTrace();  
 	    } catch (Exception e) {  
@@ -44,5 +46,13 @@ public class GeraLog {
 		sb.append( d.get( GregorianCalendar.SECOND ) );
 		// retorna a String do StringBuilder
 		return sb.toString();
+	}
+	
+	public String getCaminhoLog() {
+		return caminhoLog;
+	}
+
+	public void setCaminhoLog(String caminhoLog) {
+		this.caminhoLog = caminhoLog;
 	}
 }

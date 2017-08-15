@@ -7,7 +7,7 @@ public class VerificaPasta{
 	String nomeArquivo;
 	double tamanhoArquivos;
 	double tamanhoArquivos2;
-	
+
 	double converteTotal;
 	
 	GeraLog log = new GeraLog();
@@ -15,11 +15,13 @@ public class VerificaPasta{
 	ThreadControle controle = new ThreadControle();
 	
 	public double buscaArquivos(String caminho){		
-			
+		
 		double tamanhoTotal = 0;
 		int contador = 0;
 		String arquivos[] = new String[10];
 		double tamanho[] = new double[10];
+		
+		//log.setCaminhoLog("C:\\Users\\wmeier\\Desktop\\");
 		
         File arquivo = new File(caminho);
 		File[] file = arquivo.listFiles(); 
@@ -49,9 +51,12 @@ public class VerificaPasta{
         return tamanhoTotal;
 	}
 	
-	public void comparaTamanhos(String caminho, String comando){
+	public void comparaTamanhos(String caminho, String comando, String caminhoLog){
+		
+		log.setCaminhoLog(caminhoLog);
 		
 		log.gravaLog("Comparando tamanho total da pasta.");
+		
 		tamanhoArquivos = buscaArquivos(caminho);
 		log.gravaLog("Delay 10000.");
 		controle.pause(10000);
@@ -60,11 +65,15 @@ public class VerificaPasta{
 		if(tamanhoArquivos2 > tamanhoArquivos){
 			log.gravaLog("Volume de dados na pasta foi alterado.");
 		}else if(tamanhoArquivos2 == tamanhoArquivos){
-			log.gravaLog("Executa Tarefa.");
-			exe.tarefa(comando);
-			log.gravaLog("Tarefa executada no caminho: " + comando);
-			log.gravaLog("Delay 10000");
-			controle.pause(10000);
+			if(comando == null || comando.trim().equals("")){
+				log.gravaLog("Executavel não encontrado!");
+			}else{
+				log.gravaLog("Executa Tarefa.");
+				exe.tarefa(comando);
+				log.gravaLog("Tarefa executada no caminho: " + comando);
+				log.gravaLog("Delay 10000");
+				controle.pause(10000);
+			}
 		}
 	}
 }
