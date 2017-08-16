@@ -21,13 +21,10 @@ public class VerificaPasta{
 		String arquivos[] = new String[10];
 		double tamanho[] = new double[10];
 		
-		//log.setCaminhoLog("C:\\Users\\wmeier\\Desktop\\");
-		
         File arquivo = new File(caminho);
 		File[] file = arquivo.listFiles(); 
         if(file != null){ 
             int length = file.length; 
-            //System.out.println("Verifica os arquivos");
             log.gravaLog("Arquivos encontrados no caminho: ");
             log.gravaLog(caminho);
             for(int i = 0; i < length; ++i){ 
@@ -67,6 +64,8 @@ public class VerificaPasta{
 			log.gravaLog("Pasta Vazia, não faz nada!");
 		}else if(tamanhoArquivos2 > tamanhoArquivos){
 			log.gravaLog("Volume de dados na pasta foi alterado.");
+		}else if(tamanhoArquivos2 < tamanhoArquivos){
+			log.gravaLog("Volume de dados na pasta foi alterado.");
 		}else if(tamanhoArquivos2 == tamanhoArquivos){
 			if(comando == null || comando.trim().equals("")){
 				log.gravaLog("Executavel não encontrado!");
@@ -75,7 +74,7 @@ public class VerificaPasta{
 				exe.tarefa(comando);
 				log.gravaLog("Tarefa executada no caminho: " + comando);
 				log.gravaLog("Delay: " + tempoEsperaComando +".");
-				controle.pause(tempoEsperaComando); //quatro minutos
+				controle.pause(tempoEsperaComando);
 			}
 		}
 	}
