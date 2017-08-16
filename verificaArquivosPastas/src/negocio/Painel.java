@@ -12,8 +12,7 @@ public class Painel extends javax.swing.JFrame {
 
     private void initComponents() {
 
-        jButton1 = new javax.swing.JButton();
-      
+        jButton1 = new javax.swing.JButton(); 
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -69,8 +68,8 @@ public class Painel extends javax.swing.JFrame {
 	                break;
 	            }
 	        }
-	    } catch (ClassNotFoundException | InstantiationException | IllegalAccessException | javax.swing.UnsupportedLookAndFeelException ex) {
-	        java.util.logging.Logger.getLogger(Painel.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+	    } catch (ClassNotFoundException | InstantiationException | IllegalAccessException | javax.swing.UnsupportedLookAndFeelException app) {
+	        java.util.logging.Logger.getLogger(Painel.class.getName()).log(java.util.logging.Level.SEVERE, null, app);
 	    } 
 	    java.awt.EventQueue.invokeLater(new Runnable() {
 	        public void run() {

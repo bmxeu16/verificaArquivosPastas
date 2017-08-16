@@ -51,18 +51,21 @@ public class VerificaPasta{
         return tamanhoTotal;
 	}
 	
-	public void comparaTamanhos(String caminho, String comando, String caminhoLog){
+	public void comparaTamanhos(String caminho, String comando, 
+			String caminhoLog, int tempoAnalise, int tempoEsperaComando){
 		
 		log.setCaminhoLog(caminhoLog);
 		
 		log.gravaLog("Comparando tamanho total da pasta.");
 		
 		tamanhoArquivos = buscaArquivos(caminho);
-		log.gravaLog("Delay 10000.");
-		controle.pause(10000);
+		log.gravaLog("Espera " + tempoAnalise +".");
+		controle.pause(tempoAnalise);
 		tamanhoArquivos2 = buscaArquivos(caminho);
 		
-		if(tamanhoArquivos2 > tamanhoArquivos){
+		if(tamanhoArquivos == 0 && tamanhoArquivos2 == 0){
+			log.gravaLog("Pasta Vazia, não faz nada!");
+		}else if(tamanhoArquivos2 > tamanhoArquivos){
 			log.gravaLog("Volume de dados na pasta foi alterado.");
 		}else if(tamanhoArquivos2 == tamanhoArquivos){
 			if(comando == null || comando.trim().equals("")){
@@ -71,8 +74,8 @@ public class VerificaPasta{
 				log.gravaLog("Executa Tarefa.");
 				exe.tarefa(comando);
 				log.gravaLog("Tarefa executada no caminho: " + comando);
-				log.gravaLog("Delay 10000");
-				controle.pause(10000);
+				log.gravaLog("Delay: " + tempoEsperaComando +".");
+				controle.pause(tempoEsperaComando); //quatro minutos
 			}
 		}
 	}
