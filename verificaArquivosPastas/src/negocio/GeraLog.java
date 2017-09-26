@@ -2,7 +2,6 @@ package negocio;
 
 import java.io.BufferedWriter;
 import java.io.FileWriter;
-import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.GregorianCalendar;
 
@@ -16,15 +15,14 @@ public class GeraLog {
 		
 	    try { 
 	    	PrintWriter out = new PrintWriter(new BufferedWriter(
-	    			new FileWriter(getCaminhoLog()+"\\log.log", true)));  
-	        out.println(dataHoraServidor()+" linha: "+textoQueSeraEscrito+ "\n");  
+	    			new FileWriter(getCaminhoLog()+"log.log", true)));  
+	        out.println(dataHoraServidor()+" linha: "+textoQueSeraEscrito+ "\n");
 	        out.close();
-	    } catch (IOException e) {  
+	    }catch (Exception e) {  
 	        e.printStackTrace();  
-	    } catch (Exception e) {  
-	        e.printStackTrace();  
-	    }  
+	    }
 	}
+	
 	
 	public String dataHoraServidor() {
 		// cria um StringBuilder

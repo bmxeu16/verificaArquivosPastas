@@ -16,7 +16,7 @@ public class Painel extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jButton1.setText("Desligar AplicaÁ„o");
+        jButton1.setText("Desligar Aplica√ß√£o");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton1ActionPerformed(evt);
@@ -44,7 +44,7 @@ public class Painel extends javax.swing.JFrame {
     }                      
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {                                         
-        //para a aplicaÁ„o ao apertar no bot„o
+        //para a Aplica√ß√£o ao apertar no bot√£o
     	System.exit(0);
     }  
  
@@ -55,7 +55,7 @@ public class Painel extends javax.swing.JFrame {
         java.awt.Toolkit.getDefaultToolkit().beep();
         dialog.setAlwaysOnTop(true);    
         dialog.setVisible(true);
-        //coloca a janela na frente apÛs fechar o aviso
+        //coloca a janela na frente ap√≥s fechar o aviso
         this.toFront();
 
     }

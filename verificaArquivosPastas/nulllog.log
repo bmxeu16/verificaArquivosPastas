@@ -1,42 +1,88 @@
-15/7/2017 11:28:30 linha: Comparando tamanho total da pasta.
+8/8/2017 13:53:32 linha: java.io.IOException: Cannot run program "rundll32": error=2, Arquivo ou diretório não encontrado
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1048)
+	at java.lang.Runtime.exec(Runtime.java:620)
+	at java.lang.Runtime.exec(Runtime.java:450)
+	at java.lang.Runtime.exec(Runtime.java:347)
+	at negocio.ExecutaTarefa.tarefa(ExecutaTarefa.java:13)
+	at negocio.VerificaPasta.comparaTamanhos(VerificaPasta.java:75)
+	at negocio.Aplicativo.main(Aplicativo.java:73)
+Caused by: java.io.IOException: error=2, Arquivo ou diretório não encontrado
+	at java.lang.UNIXProcess.forkAndExec(Native Method)
+	at java.lang.UNIXProcess.<init>(UNIXProcess.java:247)
+	at java.lang.ProcessImpl.start(ProcessImpl.java:134)
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1029)
+	... 6 more
 
-15/7/2017 11:28:30 linha: Arquivos encontrados no caminho: 
 
-15/7/2017 11:28:30 linha: C:\edi\elavon\destino\outbox
+8/8/2017 13:56:17 linha: java.io.IOException: Cannot run program "rundll32": error=2, Arquivo ou diretório não encontrado
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1048)
+	at java.lang.Runtime.exec(Runtime.java:620)
+	at java.lang.Runtime.exec(Runtime.java:450)
+	at java.lang.Runtime.exec(Runtime.java:347)
+	at negocio.ExecutaTarefa.tarefa(ExecutaTarefa.java:12)
+	at negocio.VerificaPasta.comparaTamanhos(VerificaPasta.java:75)
+	at negocio.Aplicativo.main(Aplicativo.java:73)
+Caused by: java.io.IOException: error=2, Arquivo ou diretório não encontrado
+	at java.lang.UNIXProcess.forkAndExec(Native Method)
+	at java.lang.UNIXProcess.<init>(UNIXProcess.java:247)
+	at java.lang.ProcessImpl.start(ProcessImpl.java:134)
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1029)
+	... 6 more
 
-15/7/2017 11:28:30 linha: AGENDA_104_01082017001.REM, 2.405 KB
 
-15/7/2017 11:28:30 linha: PAGFOR_104_82777_20170418_01.REM, 0.033 KB
+8/8/2017 14:20:53 linha: ------
+java.io.IOException: Cannot run program "rundll32": error=2, Arquivo ou diretório não encontrado
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1048)
+	at java.lang.Runtime.exec(Runtime.java:620)
+	at java.lang.Runtime.exec(Runtime.java:450)
+	at java.lang.Runtime.exec(Runtime.java:347)
+	at negocio.ExecutaTarefa.tarefa(ExecutaTarefa.java:12)
+	at negocio.VerificaPasta.comparaTamanhos(VerificaPasta.java:75)
+	at negocio.Aplicativo.main(Aplicativo.java:73)
+Caused by: java.io.IOException: error=2, Arquivo ou diretório não encontrado
+	at java.lang.UNIXProcess.forkAndExec(Native Method)
+	at java.lang.UNIXProcess.<init>(UNIXProcess.java:247)
+	at java.lang.ProcessImpl.start(ProcessImpl.java:134)
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1029)
+	... 6 more
+------
 
-15/7/2017 11:28:30 linha: PAGFOR_237_82777_20170418_01.REM, 0.017 KB
 
-15/7/2017 11:28:30 linha: PAGFOR_455_82777_20170418_01.REM, 16.988 KB
+8/8/2017 14:39:47 linha: ???????Falha na Execução ta Terefa.???????
 
-15/7/2017 11:28:30 linha: Total de Arquivos encontrado: 4
+8/8/2017 14:42:32 linha: ------
+java.io.IOException: Cannot run program "rundll32": error=2, Arquivo ou diretório não encontrado
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1048)
+	at java.lang.Runtime.exec(Runtime.java:620)
+	at java.lang.Runtime.exec(Runtime.java:450)
+	at java.lang.Runtime.exec(Runtime.java:347)
+	at negocio.ExecutaTarefa.tarefa(ExecutaTarefa.java:12)
+	at negocio.VerificaPasta.comparaTamanhos(VerificaPasta.java:76)
+	at negocio.Aplicativo.main(Aplicativo.java:73)
+Caused by: java.io.IOException: error=2, Arquivo ou diretório não encontrado
+	at java.lang.UNIXProcess.forkAndExec(Native Method)
+	at java.lang.UNIXProcess.<init>(UNIXProcess.java:247)
+	at java.lang.ProcessImpl.start(ProcessImpl.java:134)
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1029)
+	... 6 more
+------
 
-15/7/2017 11:28:30 linha: Tamanho Total: 0.019443 KB
 
-15/7/2017 11:28:30 linha: Delay 10000.
+8/8/2017 14:45:32 linha: ------
+java.io.IOException: Cannot run program "rundll32": error=2, Arquivo ou diretório não encontrado
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1048)
+	at java.lang.Runtime.exec(Runtime.java:620)
+	at java.lang.Runtime.exec(Runtime.java:450)
+	at java.lang.Runtime.exec(Runtime.java:347)
+	at negocio.ExecutaTarefa.tarefa(ExecutaTarefa.java:12)
+	at negocio.VerificaPasta.comparaTamanhos(VerificaPasta.java:76)
+	at negocio.Aplicativo.main(Aplicativo.java:73)
+Caused by: java.io.IOException: error=2, Arquivo ou diretório não encontrado
+	at java.lang.UNIXProcess.forkAndExec(Native Method)
+	at java.lang.UNIXProcess.<init>(UNIXProcess.java:247)
+	at java.lang.ProcessImpl.start(ProcessImpl.java:134)
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1029)
+	... 6 more
+------
 
-15/7/2017 11:31:57 linha: Comparando tamanho total da pasta.
-
-15/7/2017 11:31:57 linha: Arquivos encontrados no caminho: 
-
-15/7/2017 11:31:57 linha: C:\edi\elavon\destino\outbox
-
-15/7/2017 11:31:57 linha: AGENDA_104_01082017001.REM, 2.405 KB
-
-15/7/2017 11:31:57 linha: PAGFOR_104_82777_20170418_01.REM, 0.033 KB
-
-15/7/2017 11:31:57 linha: PAGFOR_237_82777_20170418_01.REM, 0.017 KB
-
-15/7/2017 11:31:57 linha: PAGFOR_455_82777_20170418_01.REM, 16.988 KB
-
-15/7/2017 11:31:57 linha: Total de Arquivos encontrado: 4
-
-15/7/2017 11:31:57 linha: Tamanho Total: 0.019443 KB
-
-15/7/2017 11:31:57 linha: Delay 10000.
-
-15/7/2017 11:36:0 linha: Comparando tamanho total da pasta.
 

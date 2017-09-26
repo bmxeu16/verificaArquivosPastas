@@ -25,6 +25,7 @@ public class VerificaPasta{
 		File[] file = arquivo.listFiles(); 
         if(file != null){ 
             int length = file.length; 
+            log.gravaLog("============= Verificando a pasta =============");
             log.gravaLog("Arquivos encontrados no caminho: ");
             log.gravaLog(caminho);
             for(int i = 0; i < length; ++i){ 
@@ -61,18 +62,18 @@ public class VerificaPasta{
 		tamanhoArquivos2 = buscaArquivos(caminho);
 		
 		if(tamanhoArquivos == 0 && tamanhoArquivos2 == 0){
-			log.gravaLog("Pasta Vazia, não faz nada!");
+			log.gravaLog("Pasta Vazia, nÃ£o faz nada!");
 		}else if(tamanhoArquivos2 > tamanhoArquivos){
 			log.gravaLog("Volume de dados na pasta foi alterado.");
 		}else if(tamanhoArquivos2 < tamanhoArquivos){
 			log.gravaLog("Volume de dados na pasta foi alterado.");
 		}else if(tamanhoArquivos2 == tamanhoArquivos){
 			if(comando == null || comando.trim().equals("")){
-				log.gravaLog("Executavel não encontrado!");
+				log.gravaLog("Executavel nÃ£o encontrado!");
 			}else{
-				log.gravaLog("Executa Tarefa.");
+				log.gravaLog("Executando tarefa");
+				log.gravaLog("Caminho do executavel: " + comando);
 				exe.tarefa(comando);
-				log.gravaLog("Tarefa executada no caminho: " + comando);
 				log.gravaLog("Delay: " + tempoEsperaComando +".");
 				controle.pause(tempoEsperaComando);
 			}
