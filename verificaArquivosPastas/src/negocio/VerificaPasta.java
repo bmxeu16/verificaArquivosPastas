@@ -14,12 +14,57 @@ public class VerificaPasta{
 	ExecutaTarefa exe = new ExecutaTarefa();
 	ThreadControle controle = new ThreadControle();
 	
-	public double buscaArquivos(String caminho){		
+	/*
+	 * Busca tamanho total da raiz definida para analise.
+	 */
+	public double buscaArquivos(String path)  {     
+		File folder = new File(path);     
+		int size = 0;
+		if (folder.isDirectory()) {     	
+			String[] dirList = folder.list();     
+			if (dirList != null) {     
+		        for (int i = 0; i < dirList.length; i++) {     
+		            String fileName = dirList[i];     
+		            File f = new File(path, fileName);     
+		            if (f.isDirectory()) {
+		                String filePath = f.getPath();
+		                size += buscaArquivos(filePath);     
+		                continue;     
+		            }
+		            size += f.length();     
+		        }     
+		    }     
+		}
+		return size;
+	}
+	
+	/*
+	 * Saida com caminho da pasta e arquivos analisados, cuspindo no log os arquivos analisado.
+	 */
+	public void listaDiretorio(File directory) {
+		log.gravaLog("Verificando pasta "+ directory);
+    	for(File arquivo: directory.listFiles()) {
+    		if(arquivo.isFile()){ 
+				float tamanho = arquivo.length(); //pega tamanho do arquivo
+				log.gravaLog( "*** " +arquivo.getName() + ", " + tamanho + " bytes");
+			}else{
+				if(arquivo.isFile()) {
+					log.gravaLog("Nenhum arquivo encontrado!");
+				}
+				
+				listaDiretorio(arquivo);
+			}
+		}
+	}
+	
+	/*
+	public double buscaArquivos2(String caminho){		
 		
 		double tamanhoTotal = 0;
 		int contador = 0;
-		String arquivos[] = new String[10];
-		double tamanho[] = new double[10];
+		String arquivos[] = new String[100];
+		float tamanho[] = new float[100];
+		
 		
         File arquivo = new File(caminho);
 		File[] file = arquivo.listFiles(); 
@@ -33,8 +78,7 @@ public class VerificaPasta{
                 if(f.isFile()){
                 	arquivos[contador] = f.getName();
                 	tamanho[contador] = f.length();
-                	tamanho[contador] = tamanho[contador] / 1000;
-                	log.gravaLog(arquivos[contador] + ", " + tamanho[contador] + " KB");
+                	log.gravaLog(arquivos[contador] + ", " + tamanho[contador] + " bytes");
                 	tamanhoTotal = tamanhoTotal + tamanho[contador];
                 	contador++;
                 }else if(f.isDirectory()){ 
@@ -47,18 +91,26 @@ public class VerificaPasta{
             log.gravaLog("Tamanho Total: " + converteTotal + " KB");
         }
         return tamanhoTotal;
-	}
+	}*/
 	
 	public void comparaTamanhos(String caminho, String comando, 
 			String caminhoLog, int tempoAnalise, int tempoEsperaComando){
+		
+		File arquivos = new File(caminho);
 		
 		log.setCaminhoLog(caminhoLog);
 		
 		log.gravaLog("Comparando tamanho total da pasta.");
 		
+		listaDiretorio(arquivos);
 		tamanhoArquivos = buscaArquivos(caminho);
-		log.gravaLog("Espera " + tempoAnalise +".");
+		log.gravaLog("Tamanho total: " + buscaArquivos(caminho));
+		log.gravaLog("Espera para comparar tamanho das pastas " + tempoAnalise +".");
+		
 		controle.pause(tempoAnalise);
+		log.gravaLog("Segunda Verificação");
+		listaDiretorio(arquivos);
+		log.gravaLog("Tamanho total: " + buscaArquivos(caminho));
 		tamanhoArquivos2 = buscaArquivos(caminho);
 		
 		if(tamanhoArquivos == 0 && tamanhoArquivos2 == 0){

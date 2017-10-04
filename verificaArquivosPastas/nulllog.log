@@ -86,3 +86,291 @@ Caused by: java.io.IOException: error=2, Arquivo ou diretório não encontrado
 ------
 
 
+26/8/2017 17:56:50 linha: ------
+java.io.IOException: Cannot run program "rundll32": error=2, Arquivo ou diretório não encontrado
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1048)
+	at java.lang.Runtime.exec(Runtime.java:620)
+	at java.lang.Runtime.exec(Runtime.java:450)
+	at java.lang.Runtime.exec(Runtime.java:347)
+	at negocio.ExecutaTarefa.tarefa(ExecutaTarefa.java:12)
+	at negocio.VerificaPasta.comparaTamanhos(VerificaPasta.java:78)
+	at negocio.Aplicativo.main(Aplicativo.java:73)
+Caused by: java.io.IOException: error=2, Arquivo ou diretório não encontrado
+	at java.lang.UNIXProcess.forkAndExec(Native Method)
+	at java.lang.UNIXProcess.<init>(UNIXProcess.java:247)
+	at java.lang.ProcessImpl.start(ProcessImpl.java:134)
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1029)
+	... 6 more
+------
+
+
+4/9/2017 16:3:8 linha: ------
+java.io.IOException: Cannot run program "rundll32": error=2, Arquivo ou diretório não encontrado
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1048)
+	at java.lang.Runtime.exec(Runtime.java:620)
+	at java.lang.Runtime.exec(Runtime.java:450)
+	at java.lang.Runtime.exec(Runtime.java:347)
+	at negocio.ExecutaTarefa.tarefa(ExecutaTarefa.java:12)
+	at negocio.VerificaPasta.comparaTamanhos(VerificaPasta.java:119)
+	at negocio.Aplicativo.main(Aplicativo.java:74)
+Caused by: java.io.IOException: error=2, Arquivo ou diretório não encontrado
+	at java.lang.UNIXProcess.forkAndExec(Native Method)
+	at java.lang.UNIXProcess.<init>(UNIXProcess.java:247)
+	at java.lang.ProcessImpl.start(ProcessImpl.java:134)
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1029)
+	... 6 more
+------
+
+
+4/9/2017 16:5:14 linha: ------
+java.io.IOException: Cannot run program "rundll32": error=2, Arquivo ou diretório não encontrado
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1048)
+	at java.lang.Runtime.exec(Runtime.java:620)
+	at java.lang.Runtime.exec(Runtime.java:450)
+	at java.lang.Runtime.exec(Runtime.java:347)
+	at negocio.ExecutaTarefa.tarefa(ExecutaTarefa.java:12)
+	at negocio.VerificaPasta.comparaTamanhos(VerificaPasta.java:118)
+	at negocio.Aplicativo.main(Aplicativo.java:74)
+Caused by: java.io.IOException: error=2, Arquivo ou diretório não encontrado
+	at java.lang.UNIXProcess.forkAndExec(Native Method)
+	at java.lang.UNIXProcess.<init>(UNIXProcess.java:247)
+	at java.lang.ProcessImpl.start(ProcessImpl.java:134)
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1029)
+	... 6 more
+------
+
+
+4/9/2017 16:15:0 linha: ------
+java.io.IOException: Cannot run program "rundll32": error=2, Arquivo ou diretório não encontrado
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1048)
+	at java.lang.Runtime.exec(Runtime.java:620)
+	at java.lang.Runtime.exec(Runtime.java:450)
+	at java.lang.Runtime.exec(Runtime.java:347)
+	at negocio.ExecutaTarefa.tarefa(ExecutaTarefa.java:12)
+	at negocio.VerificaPasta.comparaTamanhos(VerificaPasta.java:116)
+	at negocio.Aplicativo.main(Aplicativo.java:74)
+Caused by: java.io.IOException: error=2, Arquivo ou diretório não encontrado
+	at java.lang.UNIXProcess.forkAndExec(Native Method)
+	at java.lang.UNIXProcess.<init>(UNIXProcess.java:247)
+	at java.lang.ProcessImpl.start(ProcessImpl.java:134)
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1029)
+	... 6 more
+------
+
+
+4/9/2017 16:15:38 linha: ------
+java.io.IOException: Cannot run program "rundll32": error=2, Arquivo ou diretório não encontrado
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1048)
+	at java.lang.Runtime.exec(Runtime.java:620)
+	at java.lang.Runtime.exec(Runtime.java:450)
+	at java.lang.Runtime.exec(Runtime.java:347)
+	at negocio.ExecutaTarefa.tarefa(ExecutaTarefa.java:12)
+	at negocio.VerificaPasta.comparaTamanhos(VerificaPasta.java:115)
+	at negocio.Aplicativo.main(Aplicativo.java:74)
+Caused by: java.io.IOException: error=2, Arquivo ou diretório não encontrado
+	at java.lang.UNIXProcess.forkAndExec(Native Method)
+	at java.lang.UNIXProcess.<init>(UNIXProcess.java:247)
+	at java.lang.ProcessImpl.start(ProcessImpl.java:134)
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1029)
+	... 6 more
+------
+
+
+4/9/2017 16:19:38 linha: ------
+java.io.IOException: Cannot run program "rundll32": error=2, Arquivo ou diretório não encontrado
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1048)
+	at java.lang.Runtime.exec(Runtime.java:620)
+	at java.lang.Runtime.exec(Runtime.java:450)
+	at java.lang.Runtime.exec(Runtime.java:347)
+	at negocio.ExecutaTarefa.tarefa(ExecutaTarefa.java:12)
+	at negocio.VerificaPasta.comparaTamanhos(VerificaPasta.java:117)
+	at negocio.Aplicativo.main(Aplicativo.java:74)
+Caused by: java.io.IOException: error=2, Arquivo ou diretório não encontrado
+	at java.lang.UNIXProcess.forkAndExec(Native Method)
+	at java.lang.UNIXProcess.<init>(UNIXProcess.java:247)
+	at java.lang.ProcessImpl.start(ProcessImpl.java:134)
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1029)
+	... 6 more
+------
+
+
+4/9/2017 16:30:1 linha: ------
+java.io.IOException: Cannot run program "rundll32": error=2, Arquivo ou diretório não encontrado
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1048)
+	at java.lang.Runtime.exec(Runtime.java:620)
+	at java.lang.Runtime.exec(Runtime.java:450)
+	at java.lang.Runtime.exec(Runtime.java:347)
+	at negocio.ExecutaTarefa.tarefa(ExecutaTarefa.java:12)
+	at negocio.VerificaPasta.comparaTamanhos(VerificaPasta.java:118)
+	at negocio.Aplicativo.main(Aplicativo.java:74)
+Caused by: java.io.IOException: error=2, Arquivo ou diretório não encontrado
+	at java.lang.UNIXProcess.forkAndExec(Native Method)
+	at java.lang.UNIXProcess.<init>(UNIXProcess.java:247)
+	at java.lang.ProcessImpl.start(ProcessImpl.java:134)
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1029)
+	... 6 more
+------
+
+
+4/9/2017 16:30:21 linha: ------
+java.io.IOException: Cannot run program "rundll32": error=2, Arquivo ou diretório não encontrado
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1048)
+	at java.lang.Runtime.exec(Runtime.java:620)
+	at java.lang.Runtime.exec(Runtime.java:450)
+	at java.lang.Runtime.exec(Runtime.java:347)
+	at negocio.ExecutaTarefa.tarefa(ExecutaTarefa.java:12)
+	at negocio.VerificaPasta.comparaTamanhos(VerificaPasta.java:118)
+	at negocio.Aplicativo.main(Aplicativo.java:74)
+Caused by: java.io.IOException: error=2, Arquivo ou diretório não encontrado
+	at java.lang.UNIXProcess.forkAndExec(Native Method)
+	at java.lang.UNIXProcess.<init>(UNIXProcess.java:247)
+	at java.lang.ProcessImpl.start(ProcessImpl.java:134)
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1029)
+	... 6 more
+------
+
+
+4/9/2017 16:31:15 linha: ------
+java.io.IOException: Cannot run program "rundll32": error=2, Arquivo ou diretório não encontrado
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1048)
+	at java.lang.Runtime.exec(Runtime.java:620)
+	at java.lang.Runtime.exec(Runtime.java:450)
+	at java.lang.Runtime.exec(Runtime.java:347)
+	at negocio.ExecutaTarefa.tarefa(ExecutaTarefa.java:12)
+	at negocio.VerificaPasta.comparaTamanhos(VerificaPasta.java:118)
+	at negocio.Aplicativo.main(Aplicativo.java:74)
+Caused by: java.io.IOException: error=2, Arquivo ou diretório não encontrado
+	at java.lang.UNIXProcess.forkAndExec(Native Method)
+	at java.lang.UNIXProcess.<init>(UNIXProcess.java:247)
+	at java.lang.ProcessImpl.start(ProcessImpl.java:134)
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1029)
+	... 6 more
+------
+
+
+4/9/2017 16:32:44 linha: ------
+java.io.IOException: Cannot run program "rundll32": error=2, Arquivo ou diretório não encontrado
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1048)
+	at java.lang.Runtime.exec(Runtime.java:620)
+	at java.lang.Runtime.exec(Runtime.java:450)
+	at java.lang.Runtime.exec(Runtime.java:347)
+	at negocio.ExecutaTarefa.tarefa(ExecutaTarefa.java:12)
+	at negocio.VerificaPasta.comparaTamanhos(VerificaPasta.java:124)
+	at negocio.Aplicativo.main(Aplicativo.java:74)
+Caused by: java.io.IOException: error=2, Arquivo ou diretório não encontrado
+	at java.lang.UNIXProcess.forkAndExec(Native Method)
+	at java.lang.UNIXProcess.<init>(UNIXProcess.java:247)
+	at java.lang.ProcessImpl.start(ProcessImpl.java:134)
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1029)
+	... 6 more
+------
+
+
+4/9/2017 16:34:12 linha: ------
+java.io.IOException: Cannot run program "rundll32": error=2, Arquivo ou diretório não encontrado
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1048)
+	at java.lang.Runtime.exec(Runtime.java:620)
+	at java.lang.Runtime.exec(Runtime.java:450)
+	at java.lang.Runtime.exec(Runtime.java:347)
+	at negocio.ExecutaTarefa.tarefa(ExecutaTarefa.java:12)
+	at negocio.VerificaPasta.comparaTamanhos(VerificaPasta.java:124)
+	at negocio.Aplicativo.main(Aplicativo.java:74)
+Caused by: java.io.IOException: error=2, Arquivo ou diretório não encontrado
+	at java.lang.UNIXProcess.forkAndExec(Native Method)
+	at java.lang.UNIXProcess.<init>(UNIXProcess.java:247)
+	at java.lang.ProcessImpl.start(ProcessImpl.java:134)
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1029)
+	... 6 more
+------
+
+
+4/9/2017 16:34:32 linha: ------
+java.io.IOException: Cannot run program "rundll32": error=2, Arquivo ou diretório não encontrado
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1048)
+	at java.lang.Runtime.exec(Runtime.java:620)
+	at java.lang.Runtime.exec(Runtime.java:450)
+	at java.lang.Runtime.exec(Runtime.java:347)
+	at negocio.ExecutaTarefa.tarefa(ExecutaTarefa.java:12)
+	at negocio.VerificaPasta.comparaTamanhos(VerificaPasta.java:124)
+	at negocio.Aplicativo.main(Aplicativo.java:74)
+Caused by: java.io.IOException: error=2, Arquivo ou diretório não encontrado
+	at java.lang.UNIXProcess.forkAndExec(Native Method)
+	at java.lang.UNIXProcess.<init>(UNIXProcess.java:247)
+	at java.lang.ProcessImpl.start(ProcessImpl.java:134)
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1029)
+	... 6 more
+------
+
+
+4/9/2017 16:34:52 linha: ------
+java.io.IOException: Cannot run program "rundll32": error=2, Arquivo ou diretório não encontrado
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1048)
+	at java.lang.Runtime.exec(Runtime.java:620)
+	at java.lang.Runtime.exec(Runtime.java:450)
+	at java.lang.Runtime.exec(Runtime.java:347)
+	at negocio.ExecutaTarefa.tarefa(ExecutaTarefa.java:12)
+	at negocio.VerificaPasta.comparaTamanhos(VerificaPasta.java:124)
+	at negocio.Aplicativo.main(Aplicativo.java:74)
+Caused by: java.io.IOException: error=2, Arquivo ou diretório não encontrado
+	at java.lang.UNIXProcess.forkAndExec(Native Method)
+	at java.lang.UNIXProcess.<init>(UNIXProcess.java:247)
+	at java.lang.ProcessImpl.start(ProcessImpl.java:134)
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1029)
+	... 6 more
+------
+
+
+4/9/2017 16:35:12 linha: ------
+java.io.IOException: Cannot run program "rundll32": error=2, Arquivo ou diretório não encontrado
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1048)
+	at java.lang.Runtime.exec(Runtime.java:620)
+	at java.lang.Runtime.exec(Runtime.java:450)
+	at java.lang.Runtime.exec(Runtime.java:347)
+	at negocio.ExecutaTarefa.tarefa(ExecutaTarefa.java:12)
+	at negocio.VerificaPasta.comparaTamanhos(VerificaPasta.java:124)
+	at negocio.Aplicativo.main(Aplicativo.java:74)
+Caused by: java.io.IOException: error=2, Arquivo ou diretório não encontrado
+	at java.lang.UNIXProcess.forkAndExec(Native Method)
+	at java.lang.UNIXProcess.<init>(UNIXProcess.java:247)
+	at java.lang.ProcessImpl.start(ProcessImpl.java:134)
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1029)
+	... 6 more
+------
+
+
+4/9/2017 16:35:32 linha: ------
+java.io.IOException: Cannot run program "rundll32": error=2, Arquivo ou diretório não encontrado
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1048)
+	at java.lang.Runtime.exec(Runtime.java:620)
+	at java.lang.Runtime.exec(Runtime.java:450)
+	at java.lang.Runtime.exec(Runtime.java:347)
+	at negocio.ExecutaTarefa.tarefa(ExecutaTarefa.java:12)
+	at negocio.VerificaPasta.comparaTamanhos(VerificaPasta.java:124)
+	at negocio.Aplicativo.main(Aplicativo.java:74)
+Caused by: java.io.IOException: error=2, Arquivo ou diretório não encontrado
+	at java.lang.UNIXProcess.forkAndExec(Native Method)
+	at java.lang.UNIXProcess.<init>(UNIXProcess.java:247)
+	at java.lang.ProcessImpl.start(ProcessImpl.java:134)
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1029)
+	... 6 more
+------
+
+
+4/9/2017 16:35:52 linha: ------
+java.io.IOException: Cannot run program "rundll32": error=2, Arquivo ou diretório não encontrado
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1048)
+	at java.lang.Runtime.exec(Runtime.java:620)
+	at java.lang.Runtime.exec(Runtime.java:450)
+	at java.lang.Runtime.exec(Runtime.java:347)
+	at negocio.ExecutaTarefa.tarefa(ExecutaTarefa.java:12)
+	at negocio.VerificaPasta.comparaTamanhos(VerificaPasta.java:124)
+	at negocio.Aplicativo.main(Aplicativo.java:74)
+Caused by: java.io.IOException: error=2, Arquivo ou diretório não encontrado
+	at java.lang.UNIXProcess.forkAndExec(Native Method)
+	at java.lang.UNIXProcess.<init>(UNIXProcess.java:247)
+	at java.lang.ProcessImpl.start(ProcessImpl.java:134)
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1029)
+	... 6 more
+------
+
+

@@ -13,7 +13,7 @@ package negocio;
    
   Ocultar terminal na execução!
   start javaw -jar Aplicativo.jar "caminho analise" "comando bat" 
-  "caminho log" "tempo delay analise caminho" "tempo delay apos execuçãoo .bat"
+  "caminho log" "tempo delay analise caminho" "tempo delay apos execução .bat"
    
  */
 
@@ -25,21 +25,22 @@ public class Aplicativo {
 		Painel pan = new Painel();
 		GeraLog log = new GeraLog();
 		
-		
+		/*
 		String caminho = args[0];
 		String comando = args[1];
 		String caminhoLog = args[2];
 		String tempoAnalise = args[3];
 		String tempoEsperaComando = args[4];
+		*/
 		
 		
-		
-		//String caminho = "/home/william/EDI/elavon/transferencia_banco/agenda/";
-		//String comando = "verificaArquivosPastas.bat";
-		//String caminhoLog = "/home/william/EDI/app/verificaArquivosPastas/";	
+		String caminho = "/home/william/EDI/app";
+		String comando = "verificaArquivosPastas.bat";
+		String caminhoLog = "/home/william/EDI/app/verificaArquivosPastas/";	
 		//String tempoAnalise = "60000"; //1 minuto
 		//String tempoEsperaComando = "120000"; //4 minutos
-		
+		String tempoAnalise = "10000";
+		String tempoEsperaComando = "10000";
 		
 		if(caminho == null || caminho.trim().equals("")){
 			pan.showCustomAlert("Caminho origem não configurado!");
