@@ -15,6 +15,7 @@ package negocio;
   start javaw -jar Aplicativo.jar "caminho analise" "comando bat" 
   "caminho log" "tempo delay analise caminho" "tempo delay apos execução .bat"
    
+   
  */
 
 public class Aplicativo {
